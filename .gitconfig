@@ -1,0 +1,15 @@
+https://mnaoumov.wordpress.com/2012/09/13/git-devart-codecompare-integration/
+
+[diff]
+    tool = codecompare
+    guitool = codecompare
+[merge]
+    tool = codecompare 
+[mergetool]
+    keepBackup = false
+[difftool "codecompare"]
+    cmd = 'C:/Program Files/Devart/Code Compare/CodeCompare.exe' \"$LOCAL\" \"$REMOTE\"
+    renames = true
+[mergetool "codecompare"]
+    cmd = 'C:/Program Files/Devart/Code Compare/CodeMerge.exe' -MF=\"$LOCAL\" -TF=\"$REMOTE\" -BF=\"$BASE\" -RF=\"$MERGED\"
+    trustExitCode = true
